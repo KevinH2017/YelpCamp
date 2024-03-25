@@ -54,7 +54,7 @@ module.exports = {
 
 const mongoose = require('mongoose');
 
-const dbUrl = 'mongodb://127.0.0.1:27017/YelpCamp'
+const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/YelpCamp';
 
 mongoose.set('strictQuery', true);                       // Supresses strictQuery warning message
 mongoose.connect(dbUrl, { 
@@ -174,5 +174,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(8080, () => {
-    console.log("LISTENING ON PORT 8080!");
+    console.log("APP IS LISTENING!");
 });
