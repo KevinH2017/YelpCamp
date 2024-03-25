@@ -31,11 +31,11 @@ Campground Page Guest View:
 
  💡 Lessons Learned / Technologies Used:
 
- - Express.js, a fast, minimal, and flexible Node.js web application framework that helped proved a variety of features for my web application.
- - Node.js, Javascript runtime environment that allowed me to execute server-side code.
- - HTML5, the markup language used to create websites and web applications.
- - PassportJS, used for authentication and authorization of users.
- - Leaflet, Javascript library for interactive maps, allowing users to zoom in and out.
- - Render, web hosting service.
- - MongoDB Atlas, NoSQL database service, storing campgrounds' details, user accounts, reviews, and session information.
- - Cloudinary, image hosting service.
+ - Express.js - A fast, minimal, and flexible Node.js web application framework that helped proved a variety of features for my web application.
+ - Node.js - Javascript runtime environment that allowed me to execute server-side code.
+ - HTML5 - The markup language used to create websites and web applications.
+ - PassportJS - Used for authentication and authorization of users.
+ - Leaflet - Javascript library for interactive maps, allowing users to zoom in and out.
+ - Render - Web hosting service.
+ - MongoDB Atlas - NoSQL database service, storing campgrounds' details, user accounts, reviews, and session information.
+ - Cloudinary - Image hosting service.
