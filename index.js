@@ -83,6 +83,9 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(mongoSanitize({
+    replaceWith: '_'
+}))
 
 // Creates a store object in mongoDB to hold session information
 const store = new MongoDBStore({
@@ -174,5 +177,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(8080, () => {
-    console.log("APP IS LISTENING!");
+    console.log("LISTENING ON PORT 8080!");
 });
