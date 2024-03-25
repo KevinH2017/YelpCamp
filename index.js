@@ -55,6 +55,7 @@ module.exports = {
 const mongoose = require('mongoose');
 
 const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/YelpCamp';
+const secret = process.env.SECRET
 
 mongoose.set('strictQuery', true);                       // Supresses strictQuery warning message
 mongoose.connect(dbUrl, { 
@@ -90,7 +91,7 @@ app.use(mongoSanitize({
 // Creates a store object in mongoDB to hold session information
 const store = new MongoDBStore({
     url: dbUrl,
-    secret: 'thisismysecret',
+    secret: secret,
     touchAfter: 24 * 60 * 60,
 });
 
@@ -102,7 +103,7 @@ store.on("error", function(e) {
 const sessionConfig = {
     store,
     name: 'YelpCampSession',
-    secret: 'thisismysecret',
+    secret: secret,
     resave: false,
     saveUninitialized: true,
     cookie: {
