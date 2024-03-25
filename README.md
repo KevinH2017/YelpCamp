@@ -28,3 +28,14 @@ Campground Page Creator View:
 Campground Page Guest View:
 
 ![image](https://github.com/KevinH2017/YelpCamp/assets/25795504/921cba9c-889f-4139-8c24-e48ceb1b874d)
+
+ 💡 Lessons Learned / Technologies Used:
+
+ - Express.js, a fast, minimal, and flexible Node.js web application framework that helped proved a variety of features for my web application.
+ - Node.js, Javascript runtime environment that allowed me to execute server-side code.
+ - HTML5, the markup language used to create websites and web applications.
+ - PassportJS, used for authentication and authorization of users.
+ - Leaflet, Javascript library for interactive maps, allowing users to zoom in and out.
+ - Render, web hosting service.
+ - MongoDB Atlas, NoSQL database service, storing campgrounds' details, user accounts, reviews, and session information.
+ - Cloudinary, image hosting service.
