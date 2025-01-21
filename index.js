@@ -59,10 +59,11 @@ const secret = process.env.SECRET
 
 mongoose.set('strictQuery', true);                       // Supresses strictQuery warning message
 mongoose.connect(dbUrl, { 
-    useNewUrlParser: true, 
-    useCreateIndex: true, 
-    useUnifiedTopology: true,
-    useFindAndModify: false })
+    // useNewUrlParser: true, 
+    // useCreateIndex: true, 
+    // useUnifiedTopology: true,
+    // useFindAndModify: false })
+    })
     .then(() => {
         console.log("MONGO CONNECTION OPEN!");
     })
