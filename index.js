@@ -58,19 +58,14 @@ const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/YelpCamp';
 const secret = process.env.SECRET
 
 mongoose.set('strictQuery', true);                       // Supresses strictQuery warning message
-mongoose.connect(dbUrl, { 
-    // useNewUrlParser: true, 
-    // useCreateIndex: true, 
-    // useUnifiedTopology: true,
-    // useFindAndModify: false })
-    })
+mongoose.connect(dbUrl)
     .then(() => {
         console.log("MONGO CONNECTION OPEN!");
     })
     .catch(err => {
         console.log("MONGO ERROR OCURRED!");
         console.log(err);
-    })
+    });
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
