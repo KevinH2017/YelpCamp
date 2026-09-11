@@ -30,7 +30,7 @@
     "leaflet": "^1.9.4",
     "method-override": "^3.0.0",
     "mongoose": ">=6.13.10",
-    "multer": ">=2.2.0",
+    "multer": ">=2.3.0",
     "multer-storage-cloudinary": "^4.0.0",
     "nanoid": ">=3.3.18",
     "nodemon": "^3.1.0",
